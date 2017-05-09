@@ -47,7 +47,7 @@ public class TipsAndTricksUI extends UI {
         labelsLayout.addComponent(labelForBinder);
 
         //Approach #3
-        Label label = new LabelForBinder();
+        Label label = new Label();
         label.setCaption("Label with ReadonlyHasValue");
         label.setContentMode(ContentMode.HTML);
         ReadonlyHasValue<String> readonlyHasValue = new ReadonlyHasValue<String>(label::getValue, label::setValue);
